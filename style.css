@@ -53,13 +53,53 @@ grid-template-rows: minmax(100px, auto);
    grid-row: 14/28 ;
 }
 
+@media (max-width:600px) {
+    .grid-container{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: minmax(80px, auto);
+        margin: 10px;
+        }
+        
+        .item1{
+            background-color: aqua;
+            grid-column:1/50;
+            grid-row:1;
+        }
+        
+        .item2{
+           background-color: rgb(165, 127, 255);
+           grid-column: 50/80;
+           grid-row: 1;  
+        }
+        
+        .item3{
+            background-color: bisque;
+            grid-column: 1/30;
+            grid-row: 2/28; ;
+        }
+        
+        .item4{
+           background-color: beige;
+           grid-column: 30/80;
+           grid-row:2/14;
+        
+        }
+        
+        .item5{
+           background-color: beige;
+           grid-column: 30/80;
+           grid-row: 14/28 ;
+        }
+}
+
 @media (max-width: 375px) {
     .grid-container{
         display: grid;
         gap: 3px;
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: minmax(60px, auto);
-        margin: 20px;
         }
         
         .item1{
