@@ -59,6 +59,7 @@ grid-template-rows: minmax(100px, auto);
         gap: 3px;
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: minmax(60px, auto);
+        margin: 20px;
         }
         
         .item1{
